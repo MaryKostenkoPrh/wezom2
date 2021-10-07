@@ -4,57 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
-    <title>Wezom2</title>
+    <title>Practice 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function() {
+            $("#slider").slick({
+                dots: true,
+                infinite: true,
+                arrows: true,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </head>
 <body>
-<div> 
-        <div class="dogframe"> <img src="diet_dog.png" alt=""></div>
-        <div class="label"> <img src="Labels.png" alt=""></div>
-        <div class="favorite"> <img src="Favorite.png" alt=""></div>
-        <div class="text">Тестовый товар - Корм,4кг</div>
-        <div class="stars"> <img src="Rating.png" alt=""></div>
-        <div class="price"><img src="Price.png" alt=""></div>
-        <div class="button"><img src="Button.png" alt=""></div>
-
-
-        <div class="dogframe"> <img src="diet_dog.png" alt=""></div>
-        <div class="label"> <img src="Labels.png" alt=""></div>
-        <div class="favorite"> <img src="Favorite.png" alt=""></div>
-        <div class="text">Тестовый товар - Корм,4кг</div>
-        <div class="stars"> <img src="Rating.png" alt=""></div>
-        <div class="price"><img src="Price.png" alt=""></div>
-        <div class="button"><img src="Button.png" alt=""></div>
-
-
-        <div class="dogframe"> <img src="diet_dog.png" alt=""></div>
-        <div class="label"> <img src="Labels.png" alt=""></div>
-        <div class="favorite"> <img src="Favorite.png" alt=""></div>
-        <div class="text">Тестовый товар - Корм,4кг</div>
-        <div class="stars"> <img src="Rating.png" alt=""></div>
-        <div class="price"><img src="Price.png" alt=""></div>
-        <div class="button"><img src="Button.png" alt=""></div>
-    
-
-        <div class="dogframe"> <img src="diet_dog.png" alt=""></div>
-        <div class="label"> <img src="Labels.png" alt=""></div>
-        <div class="favorite"> <img src="Favorite.png" alt=""></div>
-        <div class="text">Тестовый товар - Корм,4кг</div>
-        <div class="stars"> <img src="Rating.png" alt=""></div>
-        <div class="price"><img src="Price.png" alt=""></div>
-        <div class="button"><img src="Button.png" alt=""></div>
-
-
-        <div class="dogframe"> <img src="diet_dog.png" alt=""></div>
-        <div class="label"> <img src="Labels.png" alt=""></div>
-        <div class="favorite"> <img src="Favorite.png" alt=""></div>
-        <div class="text">Тестовый товар - Корм,4кг</div>
-        <div class="stars"> <img src="Rating.png" alt=""></div>
-        <div class="price"><img src="Price.png" alt=""></div>
-        <div class="button"><img src="Button.png" alt=""></div>
-</div>
-    
-    
+    <header id="header">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <nav id="menu">
+            <ul class="menu-row top">
+                <li>Магазины</li>
+                <li>Блог</li>
+            </ul>
+            <ul class="menu-row nav">
+                <li>Товары по питомцам</li>
+                <li>Бренды</li>
+                <li>Ветаптека</li>
+                <li>Найди друга</li>
+                <li>Ветклиники</li>
+            </ul>
+        </nav>
+        <div id="account">
+            <ul class="menu-row lang">
+                <li>УКР</li>
+                <li class="rus">РУС</li>
+                <li>ENG</li>
+            </ul>
+            <ul class="menu-row icon">
+                <li> <img src="Frame 66667 (1).png" alt=""></li>
+                <li><img src="hhh.png" alt=""></li>
+                <li><img src="cost.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <article id="content">
+        <div id="slider">
+            <div class="slider-item">
+                <div class="photo"> <img src="dog.food2.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых пород</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"><img src="diet_dog.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с курицей, 4 кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"> <img src="dog,food3.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">PetKind Beef Tripe Formula Беззерновые консервы для собак с говядиной, 500 мл</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"> <img src="dog,food4.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">Scalibor (Скалибор) ошейник 48 см</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"> <img src="dog,food5.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков мини и малых пород, 2 кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"> <img src="dog,food4.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">Scalibor (Скалибор) ошейник 48 см</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div class="slider-item">
+                <div class="photo"> <img src="dog,food5.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков мини и малых пород, 2 кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div id="footer-top">
+            <div id="footer-top-dog">
+                <img src="bg.png">
+            </div>
+            <div id="footer-top-text">
+                <div>
+                    <div>Специальные предложения для зарегистрированных пользователей</div>
+                <button type="button" class="register">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div id="footer-bottom-container">
+                <div> <img src="logo2.png" alt=""></div>
+                <div>
+                    <p>Блок1</p>
+                    <ul class="block">
+                        <li>Ссылка 1</li>
+                        <li>Ссылка 2</li>
+                        <li>Длинная ссылка 3</li>
+                        <li>Ссылка 4</li>
+                    </ul>
+                </div>
+                <div><p>Блок2</p>
+                    <ul class="block">
+                        <li>Ссылка 1</li>
+                        <li>Ссылка 2</li>
+                        <li>Длинная ссылка 3</li>
+                        <li>Ссылка 4</li>
+                    </ul></div>
+                <div><p>Блок3</p>
+                    <ul class="block">
+                        <li>Ссылка 1</li>
+                        <li>Длинная ссылка 3</li>
+                    </ul></div>
+                <div><img src="btn up.png"></div>
+            </div>
+            <hr>
+            <div id="footer-bottom-copyright">
+                <div>© 2021 Тестовое задание</div>
+                <div>Разработано в</div>
+                <div>WEZOM</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
