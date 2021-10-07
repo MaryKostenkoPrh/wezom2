@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        body, div {
+            border: 1px solid red;
+        }
+
+        body {
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            display: flex;
+            height: 104px;
+        }
+
+        header > div {
+            flex-grow: 1;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            font-weight: 400;
+            font-size: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #7B94B0;
+            display: flex; 
+            margin: 5px;
+        }
+
+        .top > div {
+            margin-right: 16px;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin: 25px 5px;
+            padding: 0px;
+            width: 707px;
+            left: 250px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+
+        .navigation > div {
+            margin-right: 40px;
+        }
+
+        .flex-right {
+            text-align: right;
+        }
+
+        .lang {
+            font-weight: 700;
+            font-size: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #202454;
+            margin: 5px 40px 21px 0;
+        }
+
+        .icons {
+            margin: 15px 40px 21px 0;
+        } 
+
+        .slider {
+            display: flex;
+            width: 80%;
+            left: 250px;
+            top: 204px;
+        }
+
+        .main {
+            width: 270px;
+            height: 396px;
+            border: 2px solid white;
+            background: white;
+            position: relative;
+            }
+
+        .dogframe {
+            width: 260px;
+            height: 260px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid#E5E5E5;
+            background: white;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        .dogframe img {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        .label {
+            position: absolute;
+            width: 83px;
+            height: 48px;
+            margin-top: -248px;
+            margin-left: 20px;
+        }
+
+        .favorite {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0;
+            margin-top: 28px;
+            margin-left: 222px;
+        }
+
+        .stars {
+            display: block;
+            margin-top: 18px;
+            margin-left: 5px;
+        }
+
+        .price {
+            display: block;
+            margin-top: 9px;
+            margin-left: 5px;
+        }
+
+        .button {
+            display: block;
+            margin-top: -50px;
+            margin-left: 230px;
+        }
+
+        .topfooter {
+            display: flex;
+            background-color: rgba(2, 108, 0, 0.4);
+            height: 180px;
+        }
+
+        .dog-container {
+            flex-grow: 1;
+        }
+        .dog {
+            position: relative;
+            left: 25%;
+            bottom: 47%;
+            display: inline-block;
+        }
+
+        .textfooter {
+            flex-grow: 2;
+        }
+
+        .deals {
+            font-weight: 700;
+            font-size: normal;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            word-wrap: break-word;
+            color: #202454;
+            margin: 5px 40px 21px 0;
+        }
+
+        button {
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: white;
+            background: #E77E42;
+            border-radius: 3px;
+            padding: 15px 32px 14px 32px;
+        }
+
+        .bottom-footer {
+            display: flex;
+            background-color: #245420;
+        }
+        .footer {
+            display: flex;
+            background-color: #245420;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <div><img src="logo.png" alt=""></div>
+        </div>
+        <div>
+            <div class="top">
+                <div>Магазины</div>
+                <div>Блог</div>
+            </div>
+            <nav class="navigation"> 
+                <div>Товары по питомцам </div>
+                <div> Бренды </div> 
+                <div> Ветаптека</div>
+                <div>Ветклиника</div>
+            </nav>
+        </div>
+        <div class="flex-right">
+            <div class="lang"> УКР РУС ENG</div>
+            <div class="icons"> <img src="Frame 66667 (1).png" alt=""> <img src="Frame.png" alt=""> <img src="cost.png" alt=""> <img src="count.png" alt=""></div>
+        </div>
+    </header>
+    <div>
+        <div class="slider"> 
+            <div> 
+                <div> <img src="dog.food2.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="favorite"> <img src="Favorite.png" alt=""></div>
+                <div class="text">Тестовый товар - Корм,4кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div> 
+                <div> <img src="diet_dog.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="text">Тестовый товар - Корм,4кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div>
+                <div> <img src="dog,food3.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="favorite"> <img src="Favorite.png" alt=""></div>
+                <div class="text">Тестовый товар - Корм,4кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+            <div>
+                <div> <img src="dog,food4.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="favorite"> <img src="Favorite.png" alt=""></div>
+                <div class="text">Тестовый товар - Корм,4кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>    
+            <div> 
+                <div> <img src="dog,food5.png" alt=""></div>
+                <div class="label"> <img src="Labels.png" alt=""></div>
+                <div class="favorite"> <img src="Favorite.png" alt=""></div>
+                <div class="text">Тестовый товар - Корм,4кг</div>
+                <div class="stars"> <img src="Rating.png" alt=""></div>
+                <div class="price"><img src="Price.png" alt=""></div>
+                <div class="button"><img src="Button.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="topfooter">
+        <div class="dog-container">
+            <div class="dog">
+                <img src="bg.png">
+            </div>
+        </div>
+        <div class="textfooter">
+            <div class="deals">Специальные предложения для зарегистрированных пользователей</div>
+            <button type="button">Зарегистрироваться</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="logo2.png" alt="">
+        </div>
+            <div class="block-1">
+                <h3>Блок 1</h3>
+                <ul>
+                    <li>Ссылка 1</li>
+                    <li>Ссылка 2</li>
+                    <li>Длинная ссылка 3</li>
+                    <li>Ссылка 4</li>
+                </ul>
+            </div>
+            <div class="block-2">
+                <h3>Блок 2</h3>
+                <ul>
+                    <li>Ссылка 1</li>
+                    <li>Ссылка 2</li>
+                    <li>Длинная ссылка 3</li>
+                    <li>Ссылка 4</li>
+                </ul>
+            </div>
+            <div class="block-3">
+                <h3>Блок 3</h3>
+                <ul>
+                    <li>Ссылка 1</li>
+                    <li>Ссылка 2</li>
+                    <li>Длинная ссылка 3</li>
+                    <li>Ссылка 4</li>
+                </ul>
+            </div>
+        <div class="back-to-top"><img src="Ellipse 129.png" alt=""></div>
+        <hr>
+    </div>
+    <div>
+        <div class="bottom-footer">
+            <div class="copyright">© 2021 Тестовое задание</div>
+            <div class="signature">Разработано в <strong>WEZOM<strong></div>
+    </div>
+    </div>
+</body>
+</html>
+
