@@ -30,6 +30,7 @@ body {
 }
 #menu a {
     text-decoration: none;
+    color: unset;
 }
 #menu a:visited {
     color: unset;
@@ -43,6 +44,7 @@ body {
 
 #footer-bottom a {
     text-decoration: none;
+    color: unset;
 }
 #footer-bottom a:visited {
     color: unset;
@@ -56,6 +58,7 @@ body {
 }
 .slider-item a {
     text-decoration: none;
+    color: unset;
 }
 .slider-item a:visited {
     color: unset;
