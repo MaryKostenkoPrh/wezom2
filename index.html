@@ -49,6 +49,10 @@
                     }
                 ]
             });
+            $("#back-to-top").on("click", () => {
+                let offset = $("#logo").offset();
+                $("html,body").animate({scrollTop: offset.top}, 500);
+            });
         });
     </script> 
 </head>
@@ -463,7 +467,7 @@
                         <li> <a href="#">Ссылка 1</a> </li>
                         <li><a href="#">Длинная ссылка 3</a></li>
                     </ul></div>
-                <div><a href="#logo"><img src="btn up.png"></a></div>
+                <div><a id="back-to-top" href="#"><img src="btn up.png"></a></div>
             </div>
             <hr>
             <div id="footer-bottom-copyright">
